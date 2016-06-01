@@ -3,13 +3,13 @@
   "version": "0.5.0",
   "description": "A pure function that allows you to retrieve a member of an object or an array utilizing dot notation",
   "author": "Mike Mclaren <mike@dialexa.com>",
-  "homepage": "https://github.com/mikemclaren/grab-by-dot-notation",
+  "homepage": "https://github.com/mikemclaren/fetch-dot",
   "bugs": {
-    "url": "https://github.com/mikemclaren/grab-by-dot-notation/issues"
+    "url": "https://github.com/mikemclaren/fetch-dot/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikemclaren/grab-by-dot-notation"
+    "url": "git+https://github.com/mikemclaren/fetch-dot"
   },
   "main": "index.js",
   "scripts": {
