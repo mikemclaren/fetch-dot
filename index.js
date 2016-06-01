@@ -1,6 +1,6 @@
 'use strict';
 
-function grabByDotNotation(notation, obj) {
+module.exports = function fetchDot(notation, obj) {
 	return notation.split(/[\.\[]/g).reduce((lastObj, currentProp) => {
 		// Arrays! Tricky tricky. Though not really.
 		if(currentProp.indexOf(']') !== -1) {
@@ -11,6 +11,4 @@ function grabByDotNotation(notation, obj) {
 			return lastObj[currentProp];
 		}
 	}, obj);
-}
-
-module.exports = grabByDotNotation;
+};
