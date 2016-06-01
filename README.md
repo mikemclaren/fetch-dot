@@ -8,7 +8,10 @@ const obj = {
 	test: 'Test property.',
 	nestedObj: {
 		test: 'A nested test property.'
-	}
+	},
+	arr: [
+		'An array item'
+	]
 };
 
 fetchDot('test', obj);
@@ -16,4 +19,7 @@ fetchDot('test', obj);
 
 fetchDot('nestedObj.test', obj);
 // 'A nested test property.'
+
+fetchDot('arr[0]', obj);
+// 'An array item'
 ```
