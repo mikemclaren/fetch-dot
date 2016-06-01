@@ -13,12 +13,11 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -R mocha-lcov-reporter > ./node_modules/coveralls/bin/coveralls.js"
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
     "mocha": "^2.5.3",
-    "mocha-lcov-reporter": "^1.2.0"
   }
 }
