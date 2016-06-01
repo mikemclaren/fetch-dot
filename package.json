@@ -1,5 +1,5 @@
 {
-  "name": "grabByDotNotation",
+  "name": "fetchDot",
   "version": "0.5.0",
   "description": "A pure function that allows you to retrieve a member of an object or an array utilizing dot notation",
   "author": "Mike Mclaren <mike@dialexa.com>",
