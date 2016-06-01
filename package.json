@@ -13,7 +13,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha -R mocha-lcov-reporter > ./node_modules/coveralls/bin/coveralls.js"
   },
   "devDependencies": {
     "chai": "^3.5.0",
