@@ -61,4 +61,14 @@ describe("fetchDot()", () => {
 	it('should grab members of deeply nested arrays', () => {
 		expect(fetchDot('inceptedArr[0][0][0].test', testObj), testObj.inceptedArr[0][0][0].test);
 	});
+
+	it('should return undefined if the queried member does not exist', () => {
+		expect(typeof fetchDot('does', testObj), 'undefined');
+		expect(typeof fetchDot('does.not', testObj), 'undefined');
+		expect(typeof fetchDot('does.not.exist', testObj), 'undefined');
+	});
+
+	it('should return undefined if the queried array item does not exist', () => {
+		expect(typeof fetchDot('arr[5]', testObj), 'undefined');
+	});
 });

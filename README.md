@@ -22,4 +22,9 @@ fetchDot('nestedObj.test', obj);
 
 fetchDot('arr[0]', obj);
 // 'An array item'
+
+// If a property does not exist (no matter how nested it is), the function will
+// simply return undefined
+fetchDot('does.not.exist', obj);
+// undefined
 ```
