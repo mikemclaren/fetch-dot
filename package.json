@@ -1,6 +1,6 @@
 {
-  "name": "fetchDot",
-  "version": "0.5.0",
+  "name": "fetch-dot",
+  "version": "1.0.0",
   "description": "A pure function that allows you to retrieve a member of an object or an array utilizing dot notation",
   "author": "Mike Mclaren <mike@dialexa.com>",
   "homepage": "https://github.com/mikemclaren/fetch-dot",
@@ -15,6 +15,17 @@
   "scripts": {
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "keywords": [
+    "dot",
+    "notation",
+    "dotnotation",
+    "dot-notation",
+    "fetch",
+    "fetchDot",
+    "string",
+    "object",
+    "array"
+  ],
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
