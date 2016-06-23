@@ -8,8 +8,12 @@ module.exports = function fetchDot(notation, obj) {
 				currentProp = parseInt(currentProp.match(/([0-9]+)\]/)[1]);
 			}
 
-			if(lastObj.hasOwnProperty(currentProp) || Array.isArray(lastObj)) {
+			if(lastObj.hasOwnProperty(currentProp) || (Array.isArray(lastObj) && lastObj[currentProp])) {
 				return lastObj[currentProp];
+			}
+
+			if (currentProp === '') {
+				return lastObj;
 			}
 		} catch(ex) {
 			return undefined;
