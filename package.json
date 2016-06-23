@@ -1,6 +1,6 @@
 {
   "name": "fetch-dot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A pure function that allows you to retrieve a member of an object or an array utilizing dot notation",
   "author": "Mike Mclaren <mike@dialexa.com>",
   "homepage": "https://github.com/mikemclaren/fetch-dot",
