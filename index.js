@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function fetchDot(notation, obj) {
-	return notation.split(/[\.\[]/g).reduce((lastObj, currentProp) => {
+	return notation.split(/[\.\[]/g).reduce(function (lastObj, currentProp) {
 		try {
 			// Arrays! Tricky tricky. Though not really.
 			if(currentProp.indexOf(']') !== -1) {
